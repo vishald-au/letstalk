@@ -265,6 +265,7 @@ a:hover{
 }
 .list-head li{
   padding: 10px 15px 1px;
+  cursor: pointer;
 }
 .list-head ul{
   list-style: none;
