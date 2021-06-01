@@ -120,14 +120,19 @@ code {
   margin-left: 5px;
 }
 .startbtn .MuiButton-label{font-weight: 900;}
+.startbtn a:hover,
+.startbtn a{
+  text-decoration: none;
+  color: white;
+}
 .startbtn {
     /* background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%); */
     background: #b8124b !important;
     font-size: 12px !important;
     color: white !important;
-    border-radius: 9px !important;
     padding: 10px 16px !important;
     margin-top: 10px !important;
+    border-radius: 9px !important;
     -webkit-border-radius: 9px !important;
     -moz-border-radius: 9px !important;
     -ms-border-radius: 9px !important;

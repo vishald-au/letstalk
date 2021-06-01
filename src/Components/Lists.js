@@ -1,11 +1,14 @@
 import SearchIcon from '@material-ui/icons/Search';
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Badge from '@material-ui/core/Badge';
 import Avatar from '@material-ui/core/Avatar';
 import TuneIcon from '@material-ui/icons/Tune';
 import Data from '../Chat.json';
-import Av1 from '../avt/avt4.png';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
 const Lists = () => {
     return (
@@ -24,8 +27,8 @@ const Lists = () => {
 
                     <a className='buttonm chats-menu'>Chats</a>
                     <a className='buttonm calls-menu'>Calls</a>
-                        
-                        <a className='buttonm calls-menu'>Logout</a>
+                    <Link to="/" className='buttonm calls-menu'>Logout</Link>
+
                     </div>
                 </div>
             </div>
