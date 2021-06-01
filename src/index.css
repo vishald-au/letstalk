@@ -115,14 +115,18 @@ code {
   -o-border-radius: 60px 0 0 0;
 }
 
+a:hover{
+  text-decoration: none !important;
+}
 .startbtn svg{
   font-size: 17px;
   margin-left: 5px;
 }
 .startbtn .MuiButton-label{font-weight: 900;}
 .startbtn a:hover,
+.startbtn:hover,
 .startbtn a{
-  text-decoration: none;
+  text-decoration: none !important;
   color: white;
 }
 .startbtn {
@@ -132,6 +136,7 @@ code {
     color: white !important;
     padding: 10px 16px !important;
     margin-top: 10px !important;
+    text-decoration: none;
     border-radius: 9px !important;
     -webkit-border-radius: 9px !important;
     -moz-border-radius: 9px !important;
