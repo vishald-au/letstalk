@@ -16,7 +16,7 @@ const Start = () => {
                 <div>
                     <h2>Let's Talk<br></br>to each other</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse est enim.</p>
-                    <Link to="/start"><Button className='startbtn' variant="contained">Let's Start<ArrowForwardIcon /></Button></Link>
+                    <Link to="/form"><Button className='startbtn' variant="contained">Let's Start<ArrowForwardIcon /></Button></Link>
                 </div>
             </div>
         </div>

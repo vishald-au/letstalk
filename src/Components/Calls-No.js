@@ -25,9 +25,9 @@ const Lists = () => {
                 <div className='row menu-bar'>
                     <div className='buttons-box'>
 
-                    <a className='buttonm chats-menu'>Chats</a>
-                    <a className='buttonm calls-menu'>Calls</a>
-                    <Link to="/" className='buttonm calls-menu'>Logout</Link>
+                    <a className='buttonm calls-menu'>Chats</a>
+                    <a className='buttonm chats-menu'>Calls</a>
+                    {/* <Link to="/" className='buttonm calls-menu'> */}Logout{/* </Link> */}
 
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const Lists = () => {
             <div className='whitebottom'>
                 <div className='row sub-head'>
                     <div className='col-6'>
-                        <h3>Chats <span>Friends</span></h3>
+                        <h3>Calls <span>Recent</span></h3>
                     </div>
                     <div className='col-6'>
                         <TuneIcon />
@@ -45,7 +45,7 @@ const Lists = () => {
                    <ul>
                         {Data.map(user => (
 
-                        <Link to='/chat'><li key={user.id}>
+                        <li key={user.id}>
                              
                                  
                                     <Badge color="secondary" overlap="circle" badgeContent={user.id}>
@@ -56,7 +56,7 @@ const Lists = () => {
                                     <p>{user.chat}</p>
                                     <span className='time'>{user.time}</span>
                                 
-                        </li></Link>
+                        </li>
 
                         ))}
                     </ul> 

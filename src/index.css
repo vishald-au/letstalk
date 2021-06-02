@@ -16,6 +16,14 @@ code {
   width: 0;
 }
 
+.back-head a:hover,
+.back-head a,
+.list-head a:hover,
+.list-head a {
+  color: initial !important;
+  text-decoration: initial !important;
+  background-color: initial !important;
+}
 
 .App {
   background:#d4dfff;
@@ -295,3 +303,103 @@ a:hover{
   border-radius: 11px !important;
 }
 
+.TextColor.MuiFormControl-root{
+  width: 70% !important;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.TextColor .MuiInput-underline:hover:not(.Mui-disabled):before,
+.TextColor .MuiInput-underline:before {
+  border-color:white !important;
+}
+
+.TextColor .MuiInput-underline:after {
+  border-color:#b8124b !important;
+}
+.TextColor .MuiFormLabel-root {
+  color:rgb(255 255 255 / 50%);
+  font-size:13px;
+}
+.TextColor .MuiInputBase-root{
+  color: white !important;
+  font-size: 12px;
+}
+
+.MuiFormLabel-root.Mui-focused {color: white !important;}
+
+.back-head {
+  text-align: left;
+  padding: 0 15px;
+}
+
+.avtar-head {    padding: 15px 20px;}
+.avtar-head div:first-child{text-align: left;}
+.avtar-head div:last-child{text-align: right;}
+.avtar-head img{
+  max-width: 45px;
+  border-radius: 9px;
+  float: left;
+  margin-right: 5px;
+}
+.avtar-head  svg{
+  font-size: 17px;
+  color: rgb(23 18 32 / 70%);
+  margin: 11px 0 0 10px;
+}
+.avtar-head  span{font-size: 11px;opacity: .5;}
+.avtar-head  h5{
+  font-size: 13px;
+  margin: 5px 0 -2px 0;
+}
+
+.chat-area {
+  min-height: 420px;
+  padding: 0px 20px;
+}
+.chat-area p{
+  font-size: 11px;
+  border-radius: 6px;
+  padding: 12px 15px;
+  margin: 5px 0;
+  width: 85%;
+}
+.chatIn {
+  text-align: left;
+  background: #eee;
+  float: left;
+}
+.chatOut {
+  text-align: right;
+  background: #ffc107;
+  float: right;
+}
+
+.textChat.MuiFormControl-root{
+  width: 70% !important;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-right: 2px;
+}
+ 
+.textChat .MuiFilledInput-input{
+    padding: 15px !important;
+}
+ 
+.textChat .MuiInputBase-root{
+  color: #212529 !important;
+  font-size: 11px !important;
+  background: #eee !important;
+  border-radius: 6px !important;
+}
+.textChat .MuiFilledInput-underline:before,
+.textChat .MuiFilledInput-underline:after {
+  border: none !important;
+}
+
+.chatIc {
+  background: #f8c146;
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 6px !important;
+    border: 0;
+}

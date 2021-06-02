@@ -1,5 +1,7 @@
 import Start from './Components/Start'
 import Lists from './Components/Lists'
+import Form from './Components/Form'
+import Chat from './Components/Chat'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -12,12 +14,20 @@ function App() {
   return (
     <div className='App'>
       <div className='AppArea'>
+
+       
         
       <Router>
         <Switch>
             
+          <Route path="/chat">
+            <Chat />
+          </Route>
           <Route path="/start">
             <Lists />
+          </Route>
+          <Route path="/form">
+            <Form />
           </Route>
           <Route path="/">
             <Start />
