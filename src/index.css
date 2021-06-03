@@ -48,11 +48,15 @@ code {
   -o-border-radius: 35px;
   overflow: hidden;
   box-shadow: 0px 0px 60px rgb(0 0 0 / 50%);
+  position: relative;
+  z-index: 2;
 }
 .StartHere {
   background: #fff;
   background: linear-gradient(0deg,
-   #fff 0%,
+  #161120 0%,
+  #161120 10%,
+   #fff 10%,
    #fff 50%,
    #161120 50%,
    #161120 90%,
@@ -66,6 +70,8 @@ code {
   align-content: stretch;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
+  z-index: 3;
 }
 .lightArea img{width: 250px;}
 .lightArea {
@@ -73,7 +79,7 @@ code {
   width: 100%;
   height: 50%;
   position: relative;
-  z-index: 2;
+  z-index: 6;
   overflow: hidden;
   text-align: center;
   display: flex;
@@ -115,7 +121,7 @@ code {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  z-index: 1;
+  z-index: 5;
   border-radius: 60px 0 0 0;
   -webkit-border-radius: 60px 0 0 0;
   -moz-border-radius: 60px 0 0 0;
@@ -178,7 +184,7 @@ a:hover{
   overflow: hidden;
   text-align: center;
   position: relative;
-  z-index: 2;
+  z-index: 6;
   color: rgb(255 255 255 / 80%);
   padding-top: 25px;
   border-radius: 0 0 0 60px;
@@ -244,7 +250,7 @@ a:hover{
   width: 100%;
   height: 75%;
   position: relative;
-  z-index: 1;
+  z-index: 5;
   overflow-y: scroll;
   overflow-x: hidden;
   text-align: center;
@@ -403,3 +409,52 @@ a:hover{
     border-radius: 6px !important;
     border: 0;
 }
+
+/* ANIMATION */
+
+      .ocean {
+        height: 35vh;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #015871;
+      }
+
+      .wave {
+        background: url(wave.svg) repeat-x;
+        position: absolute;
+        top: -198px;
+        width: 6400px;
+        height: 198px;
+        animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+        transform: translate3d(0, 0, 0);
+      }
+
+      .wave:nth-of-type(2) {
+        top: -175px;
+        animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+        opacity: 1;
+      }
+
+      @keyframes wave {
+        0% {
+            margin-left: 0;
+        }
+
+        100% {
+            margin-left: -1600px;
+        }
+      }
+
+      @keyframes swell {
+
+        0%,
+        100% {
+            transform: translate3d(0, -25px, 0);
+        }
+
+        50% {
+            transform: translate3d(0, 5px, 0);
+        }
+      }
