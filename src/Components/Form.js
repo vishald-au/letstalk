@@ -8,24 +8,24 @@ import {
     Switch,
     Route,
     Link
-  } from "react-router-dom";
+} from 'react-router-dom';
 
 
 
 
 const Form = () => {
 
-    
+
     return (
         <div className='StartHere'>
             <div className='lightArea'><img src={Img1} /></div>
             <div className='darkArea'>
                 <div>
                     <h2>Login</h2>
-                    <form noValidate autoComplete="off">
-                        <TextField id="Username" label="Username" className='TextColor' value='' />
-                        <TextField id="standard-basic" label="Password" className='TextColor' value='' />
-                        <Link to="/start"><Button className='startbtn paddingup' variant="contained">Submit<ArrowForwardIcon /></Button></Link>
+                    <form noValidate autoComplete='off'>
+                        <TextField id='Username' type='text' label='Username' className='TextColor' />
+                        <TextField id='standard-basic' type='password' label='Password' className='TextColor' />
+                        <Link to='/start'><Button className='startbtn paddingup' variant='contained'>Submit<ArrowForwardIcon /></Button></Link>
                     </form>
                 </div>
             </div>
