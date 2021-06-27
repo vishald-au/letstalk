@@ -19,8 +19,8 @@ const Lists = ({ Link }) => {
                 <div className='row menu-bar'>
                     <div className='buttons-box'>
 
-                        <a className='buttonm chats-menu'>Chats</a>
-                        <a className='buttonm calls-menu'>Calls</a>
+                        <a href='#' className='buttonm chats-menu'>Chats</a>
+                        <a href='#' className='buttonm calls-menu'>Calls</a>
                         <Link to="/" className='buttonm calls-menu'>Logout</Link>
 
                     </div>
