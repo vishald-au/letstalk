@@ -4,7 +4,12 @@ import LocalPhoneOutlinedIcon from '@material-ui/icons/LocalPhoneOutlined';
 import MoreVertOutlinedIcon from '@material-ui/icons/MoreVertOutlined';
 import TextField from '@material-ui/core/TextField';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
-import { BrowserRouter as Link } from 'react-router-dom';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from 'react-router-dom';
 
 const Lists = () => {
     return (
@@ -18,7 +23,7 @@ const Lists = () => {
                 <div className='chat-head'>
                     <div className='row avtar-head'>
                         <div className='col-8'>
-                            <img src={Img1} alt='img' />
+                            <img src={Img1} />
                             <h5>Esra Grangier</h5>
                             <span>Last seen 3:54 pm</span>
                         </div>

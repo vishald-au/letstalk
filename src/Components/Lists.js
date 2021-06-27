@@ -3,7 +3,12 @@ import Badge from '@material-ui/core/Badge';
 import Avatar from '@material-ui/core/Avatar';
 import TuneIcon from '@material-ui/icons/Tune';
 import Data from '../Chat.json';
-import { BrowserRouter as Link } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 const Lists = () => {
     return (
@@ -20,8 +25,8 @@ const Lists = () => {
                 <div className='row menu-bar'>
                     <div className='buttons-box'>
 
-                        <a href='' className='buttonm chats-menu'>Chats</a>
-                        <a href='' className='buttonm calls-menu'>Calls</a>
+                        <a className='buttonm chats-menu'>Chats</a>
+                        <a className='buttonm calls-menu'>Calls</a>
                         <Link to="/" className='buttonm calls-menu'>Logout</Link>
 
                     </div>
