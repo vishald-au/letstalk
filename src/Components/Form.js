@@ -11,7 +11,7 @@ const Form = ({ Link }) => {
 
     return (
         <div className='StartHere'>
-            <div className='lightArea'><img src={Img1} /></div>
+            <div className='lightArea'><img src={Img1} alt='img' /></div>
             <div className='darkArea'>
                 <div>
                     <h2>Login</h2>

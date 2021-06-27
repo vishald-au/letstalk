@@ -11,7 +11,7 @@ import {
 const Start = () => {
     return (
         <div className='StartHere'>
-            <div className='lightArea'><img src={Img1} /></div>
+            <div className='lightArea'><img src={Img1} alt='img' /></div>
             <div className='darkArea'>
                 <div>
                     <h2>Let's Talk<br></br>to each other</h2>

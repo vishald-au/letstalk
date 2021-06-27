@@ -17,7 +17,7 @@ const Lists = ({ Link }) => {
                 <div className='chat-head'>
                     <div className='row avtar-head'>
                         <div className='col-8'>
-                            <img src={Img1} />
+                            <img src={Img1} alt='img' />
                             <h5>Esra Grangier</h5>
                             <span>Last seen 3:54 pm</span>
                         </div>
