@@ -2,17 +2,11 @@ import Img1 from '../chat.jpeg';
 import Button from '@material-ui/core/Button';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import TextField from '@material-ui/core/TextField';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from 'react-router-dom';
 
 
 
 
-const Form = () => {
+const Form = ({ Link }) => {
 
 
     return (

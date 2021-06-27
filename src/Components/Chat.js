@@ -4,14 +4,8 @@ import LocalPhoneOutlinedIcon from '@material-ui/icons/LocalPhoneOutlined';
 import MoreVertOutlinedIcon from '@material-ui/icons/MoreVertOutlined';
 import TextField from '@material-ui/core/TextField';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from 'react-router-dom';
 
-const Lists = () => {
+const Lists = ({ Link }) => {
     return (
         <div className=''>
             <div className='whitebottom'>

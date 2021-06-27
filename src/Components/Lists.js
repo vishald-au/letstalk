@@ -3,14 +3,8 @@ import Badge from '@material-ui/core/Badge';
 import Avatar from '@material-ui/core/Avatar';
 import TuneIcon from '@material-ui/icons/Tune';
 import Data from '../Chat.json';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 
-const Lists = () => {
+const Lists = ({ Link }) => {
     return (
         <div className='ListHere'>
             <div className='darktop'>

@@ -28,16 +28,16 @@ function App() {
           <Switch>
 
             <Route path="/chat">
-              <Chat />
+              <Chat Link={Link} />
             </Route>
             <Route path="/start">
-              <Lists />
+              <Lists Link={Link} />
             </Route>
             <Route path="/form">
-              <Form />
+              <Form Link={Link} />
             </Route>
             <Route path="/">
-              <Start />
+              <Start Link={Link} />
             </Route>
 
 
