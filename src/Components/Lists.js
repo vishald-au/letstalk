@@ -3,12 +3,7 @@ import Badge from '@material-ui/core/Badge';
 import Avatar from '@material-ui/core/Avatar';
 import TuneIcon from '@material-ui/icons/Tune';
 import Data from '../Chat.json';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 const Lists = () => {
     return (
@@ -25,9 +20,9 @@ const Lists = () => {
                 <div className='row menu-bar'>
                     <div className='buttons-box'>
 
-                    <a className='buttonm chats-menu'>Chats</a>
-                    <a className='buttonm calls-menu'>Calls</a>
-                    <Link to="/" className='buttonm calls-menu'>Logout</Link>
+                        <a href='' className='buttonm chats-menu'>Chats</a>
+                        <a href='' className='buttonm calls-menu'>Calls</a>
+                        <Link to="/" className='buttonm calls-menu'>Logout</Link>
 
                     </div>
                 </div>
@@ -42,25 +37,25 @@ const Lists = () => {
                     </div>
                 </div>
                 <div className='list-head'>
-                   <ul>
+                    <ul>
                         {Data.map(user => (
 
-                        <Link to='/chat'><li key={user.id}>
-                             
-                                 
-                                    <Badge color="secondary" overlap="circle" badgeContent={user.id}>
-                                        <Avatar src={user.avtar} />
-                                    </Badge>
-                                 
-                                    <h4>{user.fname}&nbsp;{user.lname}</h4>
-                                    <p>{user.chat}</p>
-                                    <span className='time'>{user.time}</span>
-                                
-                        </li></Link>
+                            <Link to='/chat'><li key={user.id}>
+
+
+                                <Badge color="secondary" overlap="circle" badgeContent={user.id}>
+                                    <Avatar src={user.avtar} />
+                                </Badge>
+
+                                <h4>{user.fname}&nbsp;{user.lname}</h4>
+                                <p>{user.chat}</p>
+                                <span className='time'>{user.time}</span>
+
+                            </li></Link>
 
                         ))}
-                    </ul> 
-                    
+                    </ul>
+
                 </div>
             </div>
         </div>
