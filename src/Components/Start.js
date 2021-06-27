@@ -1,14 +1,8 @@
 import Img1 from '../chat.jpeg';
 import Button from '@material-ui/core/Button';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 
-const Start = () => {
+const Start = ({ Link }) => {
     return (
         <div className='StartHere'>
             <div className='lightArea'><img src={Img1} alt='img' /></div>

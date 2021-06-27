@@ -235,6 +235,8 @@ a:hover{
   margin: 0 3px;
   cursor: pointer;
   text-decoration: none;
+  background: transparent;
+  border: 0;
 }
 .calls-menu {}
 .chats-menu {
